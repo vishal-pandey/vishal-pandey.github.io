@@ -1359,7 +1359,7 @@ exports.HeaderComponent = HeaderComponent;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = ["@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');\n.container[_ngcontent-%COMP%]{\n\twidth: 100%;\n\theight: 100vh;\n\tbackground-color: #CFD8DC;\n}\n.main[_ngcontent-%COMP%]{\n\twidth: 100%;\n\theight: 100%;\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n\tbackground: url(\"https://raw.githubusercontent.com/vishal-pandey/cdn/master/bg.jpg\");\n\tbackground-size: 100% auto;\n\tbackground-position: center;\n\tbackground-repeat: no-repeat;\n}\n.intro[_ngcontent-%COMP%]{\n\t\n\tfont-size: 18px;\n\tcolor: white;\n}\n.intro-container[_ngcontent-%COMP%]{\n\tdisplay: flex;\n\tfloat: left;\n\talign-items: flex-start;\n\tjustify-content: flex-start;\n\t\n\twidth: 100%;\n}\n.promt[_ngcontent-%COMP%]{\n\tcolor: rgb(230,230,230);\n\tfont-family: 'IBM Plex Mono', monospace;\n}\n.console[_ngcontent-%COMP%]{\n\tdisplay: flex;\n\talign-items: center;\n\tflex-direction: column;\n\tjustify-content: flex-start;\n\twidth: 100%;\n\tmax-width: 500px;\n\theight: 300px;\n\tbackground-color: rgba(0,0,0,0.8);\n\tfont-family: 'IBM Plex Mono', monospace;\n\tborder-top-left-radius: 15px;\n\tborder-top-right-radius: 15px;\n}\n.bar[_ngcontent-%COMP%]{\n\tbackground-color: rgb(180,180,180);\n\theight: 20px;\n\twidth: 100%;\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: flex-end;\n\tborder-top-right-radius: 8px;\n\tborder-top-left-radius: 8px;\n\tpadding-right: 10px;\n\tbox-sizing: border-box;\n}\n.circle[_ngcontent-%COMP%]{\n\tdisplay: inline-block;\n\twidth: 10px;\n\theight: 10px;\n\tborder-radius: 10px;\n\tbackground-color: white;\n\tmargin-left: 2px;\n\tmargin-right: 2px;\n}\n.red[_ngcontent-%COMP%]{\n\tbackground-color: red;\n}\n.yellow[_ngcontent-%COMP%]{\n\tbackground-color: yellow;\n}\n.green[_ngcontent-%COMP%]{\n\tbackground-color: green;\n}\n@media screen and (max-width: 780px) {\n\t.main[_ngcontent-%COMP%]{\n\t\tbackground-size: auto 100%;\n\t}\n}"];
+var styles = ["@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');\n.container[_ngcontent-%COMP%]{\n\twidth: 100%;\n\theight: 100vh;\n\tbackground-color: #CFD8DC;\n}\n.main[_ngcontent-%COMP%]{\n\twidth: 100%;\n\theight: 100%;\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n\tbackground: url(\"https://raw.githubusercontent.com/vishal-pandey/cdn/master/bg.jpg\");\n\tbackground-size: 100% auto;\n\tbackground-position: center;\n\tbackground-repeat: no-repeat;\n}\n.intro[_ngcontent-%COMP%]{\n\tfont-size: 18px;\n\tcolor: white;\n}\n.intro-container[_ngcontent-%COMP%]{\n\tdisplay: flex;\n\talign-items: flex-start;\n\tjustify-content: flex-start;\n\tpadding-left: 5px;\n\twidth: 100%;\n}\n.promt[_ngcontent-%COMP%]{\n\tcolor: rgb(230,230,230);\n\tfont-family: 'IBM Plex Mono', monospace;\n}\n.console[_ngcontent-%COMP%]{\n\tdisplay: flex;\n\talign-items: center;\n\tflex-direction: column;\n\tjustify-content: flex-start;\n\twidth: 100%;\n\tmax-width: 550px;\n\theight: 330px;\n\n\tbackground-color: rgba(0,0,0,0.8);\n\tfont-family: 'IBM Plex Mono', monospace;\n\tborder-top-left-radius: 15px;\n\tborder-top-right-radius: 15px;\n}\n.bar[_ngcontent-%COMP%]{\n\tbackground-color: rgb(180,180,180);\n\theight: 20px;\n\twidth: 100%;\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: flex-end;\n\tborder-top-right-radius: 8px;\n\tborder-top-left-radius: 8px;\n\tpadding-right: 10px;\n\tbox-sizing: border-box;\n}\n.circle[_ngcontent-%COMP%]{\n\tdisplay: inline-block;\n\twidth: 10px;\n\theight: 10px;\n\tborder-radius: 10px;\n\tbackground-color: white;\n\tmargin-left: 2px;\n\tmargin-right: 2px;\n}\n.red[_ngcontent-%COMP%]{\n\tbackground-color: red;\n}\n.yellow[_ngcontent-%COMP%]{\n\tbackground-color: yellow;\n}\n.green[_ngcontent-%COMP%]{\n\tbackground-color: green;\n}\n@media screen and (max-width: 780px) {\n\t.main[_ngcontent-%COMP%]{\n\t\tbackground-size: auto 100%;\n\t}\n}"];
 exports.styles = styles;
 
 
@@ -1415,10 +1415,20 @@ var HomeComponent = /** @class */ (function () {
     }
     HomeComponent.prototype.ngOnInit = function () {
         var options = {
-            strings: ["Hi", "My Name Is Vishal Pandey", "I am a Coder", "I am a Developer", "I am a Travelar", "I am a Designer", "This is my portfolio website", "You can find my work here"],
+            strings: ["Hi",
+                "My Name Is Vishal Pandey",
+                "I am Freelance Software Developer",
+                "I make Websites",
+                "I make Mobile Apps",
+                "I make Desktop apps",
+                "Click Portfolio for my Projects",
+                "Click Skills to see my Skills",
+                "Click Contact to Contact Me",
+                "Thank You",
+            ],
             typeSpeed: 40,
             backSpeed: 50,
-            loop: true,
+            // loop: true,
             backDelay: 2000,
             smartBackspace: true,
         };
