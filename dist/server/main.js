@@ -1914,7 +1914,7 @@ exports.LAZY_MODULE_MAP = {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/vishal/Projects/vishalpandey/angular/src/main.server.ts */"./src/main.server.ts");
+module.exports = __webpack_require__(/*! /Users/vishal/Projects/vishalpandey/vishal-pandey.github.io/src/main.server.ts */"./src/main.server.ts");
 
 
 /***/ }),
